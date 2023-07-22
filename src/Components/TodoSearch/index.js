@@ -1,7 +1,7 @@
 import React from 'react'
-import '../TodoSearch.css'
-function TodoSearch() {
-  let [searchValue, setSearchValue] = React.useState('');
+import './TodoSearch.css'
+function TodoSearch({searchValue,setSearchValue}) {
+  
   return (
     <input className='TodoSearch'
       value={searchValue}

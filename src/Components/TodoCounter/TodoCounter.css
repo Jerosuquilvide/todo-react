@@ -9,3 +9,14 @@
   .TodoCounter span {
     font-weight: bold;
   }
+
+  
+  .TodosFinish {
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+    padding: 48px;
+    font-weight: bold;
+    color: green;
+  }
+
