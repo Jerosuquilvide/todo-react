@@ -1,17 +1,14 @@
 import React from 'react'
 import './CreateTodoButton.css'
-function TodoButton() {
+function TodoButton({onUpdate}) {
   return (
-    <button className='CreateTodoButton'
-    onClick={() => {
-      <>
-        <h1>Crear Todo</h1>
-        <p>Texto:</p>
-      </>
-    }}
-    >
+    <>
+    <button className='CreateTodoButton'onClick={onUpdate}>
+
     +</button>
+    </>
   )
+  
 }
 
 export  {TodoButton}
