@@ -1,9 +1,9 @@
 import React from 'react'
 import './CreateTodoButton.css'
-function TodoButton({onUpdate}) {
+function TodoButton({setOpenModal}) {
   return (
     <>
-    <button className='CreateTodoButton'onClick={onUpdate}>
+    <button className='CreateTodoButton'onClick={() => {setOpenModal(state => !state)}}>
 
     +</button>
     </>

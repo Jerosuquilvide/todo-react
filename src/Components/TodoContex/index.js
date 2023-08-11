@@ -25,11 +25,15 @@ const {
 
 
 
-  // const saveTodos = (newTodos) => {
-  //   localStorage.setItem('TODOS_V1', JSON.stringify(newTodos));
-    
-  //   setTotal(newTodos);
-  // };
+  const addTodo = (value) => {
+    const newTodos = [...todos];
+    newTodos.push({
+      id: todos.length+1,
+      text: value,
+      completed: false
+    })
+    setTotal(newTodos)
+  };
 
 
   const  completeTodo = (id) => {
@@ -65,6 +69,7 @@ const {
     }
   }
   
+  
   return (
     <TodoContext.Provider value={{ // Exponer datos "globales" a la app
       loading,
@@ -78,7 +83,8 @@ const {
       deleteTodo,
       openModal,
       setOpenModal,
-      updateModal
+      updateModal,
+      addTodo
     }}>
       {children}
     </TodoContext.Provider>
