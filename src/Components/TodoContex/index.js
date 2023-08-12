@@ -61,7 +61,6 @@ const {
   }
 
   const updateModal = () => {
-    console.log("llego")
     if(openModal){
       setOpenModal(false)
     }else{

@@ -6,8 +6,12 @@ function TodoCounter() {
     completedTodos,
     todos
   } = React.useContext(TodoContext);
-  
-  if(todos.completed){
+  if(todos !== [] && todos.length<=0){
+    return (
+      <div className='TodosFinish'>¡ Crea tu primer TODO !</div>
+    )
+  }
+  if(todos.length === completedTodos ){
     return (
       <div className='TodosFinish'>¡ Felidades, completaste todas las tareas pendientes !</div>
     )

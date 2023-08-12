@@ -8,7 +8,6 @@ function TodoSearch() {
       value={searchValue}
       onChange={(event) => {
         setSearchValue(event.target.value)
-        console.log()
       }}
     >
 
