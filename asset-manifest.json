@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Jerosuquilvide/todo-react/static/css/main.fea6c652.css",
+    "main.js": "/Jerosuquilvide/todo-react/static/js/main.e38e0be5.js",
+    "index.html": "/Jerosuquilvide/todo-react/index.html",
+    "main.fea6c652.css.map": "/Jerosuquilvide/todo-react/static/css/main.fea6c652.css.map",
+    "main.e38e0be5.js.map": "/Jerosuquilvide/todo-react/static/js/main.e38e0be5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fea6c652.css",
+    "static/js/main.e38e0be5.js"
+  ]
+}
