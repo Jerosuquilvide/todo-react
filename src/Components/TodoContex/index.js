@@ -11,19 +11,23 @@ const {
     error,
     loading
   } = useLocalStorage('TODOS_V1',[]);
+  
   const [searchValue, setSearchValue] = React.useState('');
   const [openModal, setOpenModal] = React.useState(false);
-  const completedTodos = todos.filter(
-    todo => !!todo.completed
-  ).length
+  var completedTodos = 0
+  var searchedValue = []
+  if(typeof todos !== 'string'){
+    completedTodos = todos.filter(
+      todo => !!todo.completed
+    ).length;
 
-  const searchedValue = todos.filter(
-    (todo) => {
-      return todo.text.toLowerCase().includes(searchValue.toLowerCase());
-    }
-  )
-
-
+    searchedValue = todos.filter(
+      (todo) => {
+        return todo.text.toLowerCase().includes(searchValue.toLowerCase());
+      }
+    )
+  }
+  
 
   const addTodo = (value) => {
     const newTodos = [...todos];
